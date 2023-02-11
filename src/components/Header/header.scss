@@ -1,0 +1,9 @@
+@import '../../scss/functions';
+
+.hdl-primary {
+  font-size: toRem(100px);
+  font-weight: 100;
+  text-align: center;
+  margin: 0;
+  color: rgba(175, 47, 47, 0.15);
+}
