@@ -1,11 +1,11 @@
 import './task.scss';
 
 function Task({handleContentEditable, task, handleDeleteTask, handleChangeStatus}) {
-    const {id, status, name} = task;
+    const {status, name} = task;
 
 
     return (
-        <li key={id} className={status ? 'task done' : 'task'}>
+        <li className={status ? 'task done' : 'task'}>
             <i
                 className='taskStatus'
                 onClick={() => {
@@ -16,7 +16,7 @@ function Task({handleContentEditable, task, handleDeleteTask, handleChangeStatus
             <span
                 className='taskName'
                 onBlur={(event) => handleContentEditable(event, task)}
-                contentEditable
+                // contentEditable
             >
                 {name}
             </span>
